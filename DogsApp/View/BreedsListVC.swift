@@ -83,7 +83,12 @@ extension BreedsListVC: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
+        let breedName = breedsTableData[indexPath.row]
+        let dogImagesVC = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "DogImagesVC") as! DogImagesVC
+        dogImagesVC.breedName = breedName
+        self.navigationController?.pushViewController(dogImagesVC, animated: true)
     }
+
 }

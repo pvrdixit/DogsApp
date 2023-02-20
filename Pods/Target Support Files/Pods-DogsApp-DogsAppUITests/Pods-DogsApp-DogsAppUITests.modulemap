@@ -1,0 +1,6 @@
+framework module Pods_DogsApp_DogsAppUITests {
+  umbrella header "Pods-DogsApp-DogsAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

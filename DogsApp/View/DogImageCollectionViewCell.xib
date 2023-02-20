@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="DogImageCollectionViewCell" id="gTV-IL-0wX" customClass="DogImageCollectionViewCell" customModule="DogsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="217" height="247"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="217" height="247"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b9G-sN-xYU">
+                        <rect key="frame" x="5" y="5" width="207" height="237"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F6W-36-72V">
+                                <rect key="frame" x="0.0" y="0.0" width="207" height="186"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ad9-V0-24b">
+                                <rect key="frame" x="0.0" y="186" width="207" height="1"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="dSh-yX-YjI"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="--" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggy-ns-7IC">
+                                <rect key="frame" x="5" y="192" width="152" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="dNe-Dy-RYC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPw-Da-37K">
+                                <rect key="frame" x="162" y="192" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="0.25" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="O3a-se-4t7"/>
+                                    <constraint firstAttribute="height" constant="40" id="olT-DO-PV5"/>
+                                </constraints>
+                                <color key="tintColor" name="appTheme"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="square.and.arrow.up" catalog="system" symbolScale="large"/>
+                                </state>
+                                <state key="selected">
+                                    <imageReference key="image" image="checkmark.square.fill" catalog="system" symbolScale="large"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="shareButtonTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="uNI-NM-w7W"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ggy-ns-7IC" firstAttribute="top" secondItem="Ad9-V0-24b" secondAttribute="bottom" constant="5" id="1KE-be-vBZ"/>
+                            <constraint firstItem="ggy-ns-7IC" firstAttribute="leading" secondItem="b9G-sN-xYU" secondAttribute="leading" constant="5" id="8u9-Ut-81A"/>
+                            <constraint firstItem="F6W-36-72V" firstAttribute="leading" secondItem="b9G-sN-xYU" secondAttribute="leading" id="Ifl-xo-rrw"/>
+                            <constraint firstItem="qPw-Da-37K" firstAttribute="leading" secondItem="ggy-ns-7IC" secondAttribute="trailing" constant="5" id="J2G-WH-5EF"/>
+                            <constraint firstItem="Ad9-V0-24b" firstAttribute="leading" secondItem="b9G-sN-xYU" secondAttribute="leading" id="NvD-HW-6b4"/>
+                            <constraint firstItem="qPw-Da-37K" firstAttribute="centerY" secondItem="ggy-ns-7IC" secondAttribute="centerY" id="WwG-VW-QI2"/>
+                            <constraint firstAttribute="trailing" secondItem="F6W-36-72V" secondAttribute="trailing" id="eG0-bN-TNS"/>
+                            <constraint firstAttribute="bottom" secondItem="ggy-ns-7IC" secondAttribute="bottom" constant="5" id="eYd-2f-Dwg"/>
+                            <constraint firstItem="Ad9-V0-24b" firstAttribute="trailing" secondItem="b9G-sN-xYU" secondAttribute="trailing" id="jcL-Yf-adM"/>
+                            <constraint firstItem="Ad9-V0-24b" firstAttribute="top" secondItem="F6W-36-72V" secondAttribute="bottom" id="uap-wV-aU8"/>
+                            <constraint firstItem="F6W-36-72V" firstAttribute="top" secondItem="b9G-sN-xYU" secondAttribute="top" id="utP-Iu-rwE"/>
+                            <constraint firstAttribute="trailing" secondItem="qPw-Da-37K" secondAttribute="trailing" constant="5" id="wot-il-QRn"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" systemColor="systemGray4Color"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="b9G-sN-xYU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="d5S-rb-GhP"/>
+                <constraint firstAttribute="trailing" secondItem="b9G-sN-xYU" secondAttribute="trailing" constant="5" id="iVQ-67-ZQ5"/>
+                <constraint firstItem="b9G-sN-xYU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="jMj-Vg-2G1"/>
+                <constraint firstAttribute="bottom" secondItem="b9G-sN-xYU" secondAttribute="bottom" constant="5" id="z6y-H5-G2L"/>
+            </constraints>
+            <size key="customSize" width="217" height="247"/>
+            <connections>
+                <outlet property="breedName" destination="ggy-ns-7IC" id="Gb1-Au-pWj"/>
+                <outlet property="displayImage" destination="F6W-36-72V" id="80h-n0-xgW"/>
+                <outlet property="shareButton" destination="qPw-Da-37K" id="tFD-Xq-A5r"/>
+            </connections>
+            <point key="canvasLocation" x="280.15267175572518" y="-18.661971830985916"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="checkmark.square.fill" catalog="system" width="128" height="114"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <namedColor name="appTheme">
+            <color red="0.16862745098039217" green="0.4823529411764706" blue="0.65490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
