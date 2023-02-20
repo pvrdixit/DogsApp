@@ -3,19 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		84D4696829A38D9B00DF60DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4696729A38D9B00DF60DA /* AppDelegate.swift */; };
 		84D4696A29A38D9B00DF60DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4696929A38D9B00DF60DA /* SceneDelegate.swift */; };
-		84D4696C29A38D9B00DF60DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4696B29A38D9B00DF60DA /* ViewController.swift */; };
 		84D4696F29A38D9B00DF60DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D4696D29A38D9B00DF60DA /* Main.storyboard */; };
 		84D4697129A38D9D00DF60DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D4697029A38D9D00DF60DA /* Assets.xcassets */; };
 		84D4697429A38D9D00DF60DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D4697229A38D9D00DF60DA /* LaunchScreen.storyboard */; };
 		84D4697F29A38D9D00DF60DA /* DogsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4697E29A38D9D00DF60DA /* DogsAppTests.swift */; };
 		84D4698929A38D9D00DF60DA /* DogsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4698829A38D9D00DF60DA /* DogsAppUITests.swift */; };
 		84D4698B29A38D9D00DF60DA /* DogsAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4698A29A38D9D00DF60DA /* DogsAppUITestsLaunchTests.swift */; };
+		84D4699C29A3960300DF60DA /* ApiEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4699B29A3960300DF60DA /* ApiEndPoints.swift */; };
+		84D4699F29A396D700DF60DA /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4699E29A396D700DF60DA /* ViewControllerExtension.swift */; };
+		84D469A229A3971300DF60DA /* HttpUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D469A129A3971300DF60DA /* HttpUtility.swift */; };
+		84D469A529A3975D00DF60DA /* BreedsListResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D469A429A3975D00DF60DA /* BreedsListResource.swift */; };
+		84D469A829A397AD00DF60DA /* BreedsListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D469A729A397AD00DF60DA /* BreedsListResponse.swift */; };
+		84D469AC29A3997E00DF60DA /* BreedsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D469AB29A3997E00DF60DA /* BreedsViewModel.swift */; };
+		84D469AE29A39BD200DF60DA /* BreedsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D469AD29A39BD200DF60DA /* BreedsListVC.swift */; };
+		84D469B129A39FA200DF60DA /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D469B029A39FA200DF60DA /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +46,6 @@
 		84D4696429A38D9B00DF60DA /* DogsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D4696729A38D9B00DF60DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84D4696929A38D9B00DF60DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84D4696B29A38D9B00DF60DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		84D4696E29A38D9B00DF60DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84D4697029A38D9D00DF60DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84D4697329A38D9D00DF60DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +55,14 @@
 		84D4698429A38D9D00DF60DA /* DogsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D4698829A38D9D00DF60DA /* DogsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsAppUITests.swift; sourceTree = "<group>"; };
 		84D4698A29A38D9D00DF60DA /* DogsAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		84D4699B29A3960300DF60DA /* ApiEndPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiEndPoints.swift; sourceTree = "<group>"; };
+		84D4699E29A396D700DF60DA /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		84D469A129A3971300DF60DA /* HttpUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpUtility.swift; sourceTree = "<group>"; };
+		84D469A429A3975D00DF60DA /* BreedsListResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsListResource.swift; sourceTree = "<group>"; };
+		84D469A729A397AD00DF60DA /* BreedsListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsListResponse.swift; sourceTree = "<group>"; };
+		84D469AB29A3997E00DF60DA /* BreedsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsViewModel.swift; sourceTree = "<group>"; };
+		84D469AD29A39BD200DF60DA /* BreedsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsListVC.swift; sourceTree = "<group>"; };
+		84D469B029A39FA200DF60DA /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +115,14 @@
 			children = (
 				84D4696729A38D9B00DF60DA /* AppDelegate.swift */,
 				84D4696929A38D9B00DF60DA /* SceneDelegate.swift */,
-				84D4696B29A38D9B00DF60DA /* ViewController.swift */,
 				84D4696D29A38D9B00DF60DA /* Main.storyboard */,
+				84D469A929A397B800DF60DA /* Model */,
+				84D469AA29A3995D00DF60DA /* View Model */,
+				84D469AF29A39BE200DF60DA /* View */,
+				84D469A629A3976100DF60DA /* DataResources */,
+				84D469A329A3971A00DF60DA /* Services */,
+				84D469A029A396FA00DF60DA /* Extensions */,
+				84D4699D29A3960800DF60DA /* Utility */,
 				84D4697029A38D9D00DF60DA /* Assets.xcassets */,
 				84D4697229A38D9D00DF60DA /* LaunchScreen.storyboard */,
 				84D4697529A38D9D00DF60DA /* Info.plist */,
@@ -125,6 +145,63 @@
 				84D4698A29A38D9D00DF60DA /* DogsAppUITestsLaunchTests.swift */,
 			);
 			path = DogsAppUITests;
+			sourceTree = "<group>";
+		};
+		84D4699D29A3960800DF60DA /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				84D4699B29A3960300DF60DA /* ApiEndPoints.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		84D469A029A396FA00DF60DA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				84D4699E29A396D700DF60DA /* ViewControllerExtension.swift */,
+				84D469B029A39FA200DF60DA /* StringExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		84D469A329A3971A00DF60DA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				84D469A129A3971300DF60DA /* HttpUtility.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		84D469A629A3976100DF60DA /* DataResources */ = {
+			isa = PBXGroup;
+			children = (
+				84D469A429A3975D00DF60DA /* BreedsListResource.swift */,
+			);
+			path = DataResources;
+			sourceTree = "<group>";
+		};
+		84D469A929A397B800DF60DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84D469A729A397AD00DF60DA /* BreedsListResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84D469AA29A3995D00DF60DA /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				84D469AB29A3997E00DF60DA /* BreedsViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		84D469AF29A39BE200DF60DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84D469AD29A39BD200DF60DA /* BreedsListVC.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +284,7 @@
 				};
 			};
 			buildConfigurationList = 84D4695F29A38D9B00DF60DA /* Build configuration list for PBXProject "DogsApp" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -258,9 +335,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84D4696C29A38D9B00DF60DA /* ViewController.swift in Sources */,
+				84D469A529A3975D00DF60DA /* BreedsListResource.swift in Sources */,
+				84D469AC29A3997E00DF60DA /* BreedsViewModel.swift in Sources */,
+				84D469B129A39FA200DF60DA /* StringExtension.swift in Sources */,
+				84D469A229A3971300DF60DA /* HttpUtility.swift in Sources */,
+				84D4699F29A396D700DF60DA /* ViewControllerExtension.swift in Sources */,
 				84D4696829A38D9B00DF60DA /* AppDelegate.swift in Sources */,
 				84D4696A29A38D9B00DF60DA /* SceneDelegate.swift in Sources */,
+				84D469A829A397AD00DF60DA /* BreedsListResponse.swift in Sources */,
+				84D4699C29A3960300DF60DA /* ApiEndPoints.swift in Sources */,
+				84D469AE29A39BD200DF60DA /* BreedsListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,8 +527,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,9 +537,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pvrdixit.DogsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -471,8 +559,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -480,9 +569,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pvrdixit.DogsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
